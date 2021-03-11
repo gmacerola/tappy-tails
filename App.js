@@ -94,7 +94,8 @@ export default function App() {
       ((tailsBottom < spikesRightNegHeight + spikesHeight + 40 ||
         tailsBottom > spikesRightNegHeight + spikesHeight + gap - 30) &&
         spikesRight > tailsLeft - 30 &&
-        spikesRight < tailsLeft + 30)
+        spikesRight < tailsLeft + 30) ||
+      tailsBottom <= 0
     ) {
       gameOver();
     }
